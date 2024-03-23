@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>User | Media-Deeds</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--  fontawesome icon -->
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mmenu.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/easyResponsiveTabs.js"></script>
+    <script src="js/project_custom.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all_other_css.css" rel="stylesheet">
+    <link href="css/nice-select.css" rel="stylesheet">
+    <link href="css/project_custom.css" rel="stylesheet">
+</head>
+<body>
+<div class="main_page" id="page">
+	<header class="main_header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="#"><img src="img/indibeam_logo.png"></a>
+                    </div> <!-- end logo -->
+                </div> <!-- end col-md-3 -->
+                <div class="col-md-6">
+                    <div class="main_menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Feeds</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Menu Item1</a></li>
+                                    <li><a href="#">Menu Item2</a></li>
+                                    <li><a href="#">Menu Item3</a></li>
+                                    <li><a href="#">Menu Item4</a></li>
+                                </ul> <!-- end sub-menu -->
+                            </li>
+                            <li><a href="#">Explore</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Menu Item1</a></li>
+                                    <li><a href="#">Menu Item2</a></li>
+                                    <li><a href="#">Menu Item3</a></li>
+                                    <li><a href="#">Menu Item4</a></li>
+                                </ul> <!-- end sub-menu -->
+                            </li>
+                            <li><a href="#">Users</a></li>
+                        </ul>
+                    </div> <!-- end main_menu -->
+                </div> <!-- end col-md-6 -->
+                <div class="col-md-3">
+                    <ul>
+                        <li class="userbutton">
+                            <a href="javascript:void(0)"><i class="fas fa-user"></i></a>
+                        </li> <!-- end userbutton -->
+                        <li class="submit_content">
+                            <a href="#">Submit Content</a>
+                        </li> <!-- end submit_content -->
+                    </ul>
+                </div> <!-- end col-md-3 -->
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+    </header><!-- end main_header -->
+
+
+    <div class="mo_menu abc">
+        <ul>
+            <li class="logo"><a href="#"><img src="img/indibeam_logo.png"></a></li>
+            <li class="menu"><a href="#mobile_menu">Menu</a></li>
+            <li class="userbutton"><a href="#"><i class="fas fa-user"></i></a></li> <!-- end userbutton -->
+        </ul>
+    </div>
+
+    <nav id="mobile_menu">
+        <ul class="nav_listing">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Feeds</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Menu Item1</a></li>
+                    <li><a href="#">Menu Item2</a></li>
+                    <li><a href="#">Menu Item3</a></li>
+                    <li><a href="#">Menu Item4</a></li>
+                </ul> <!-- end sub-menu -->
+            </li>
+            <li><a href="#">Explore</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Menu Item1</a></li>
+                    <li><a href="#">Menu Item2</a></li>
+                    <li><a href="#">Menu Item3</a></li>
+                    <li><a href="#">Menu Item4</a></li>
+                </ul> <!-- end sub-menu -->
+            </li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Submit Content</a></li>
+        </ul> <!-- end nav_listing -->
+    </nav> <!-- end mobile_menu -->
+
+    
+    <div class="popup_box">
+
+        <!-- login form -->
+        <div class="popup_box_wrapper" id="login">
+            <div class="close_btn">
+                <a href="javascript:void(0)"><i class="far fa-times-circle"></i></a>
+            </div>
+            <div class="popup_title">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Welcome Back</h4>
+                    </div> <!-- end col-md-6 -->
+                    <div class="col-md-6">
+                        <p>Didn't Registered Yet ?
+                            <a href="javascript:void(0)" class="popup_title_button" id="registered_form">Register Now</a>
+                        </p>
+                    </div> <!-- end col-md-6 -->
+                </div> <!-- end row -->
+            </div> <!-- end popup_title -->
+            <div class="popup_box_form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="popup_content">
+                            <form>
+                                <div class="form-group">
+                                    <label>Email Address or Username<sup>*</sup></label>
+                                    <input type="email" name="email" required>
+                                </div> <!-- end form-group -->
+                                <div class="form-group">
+                                    <label>Password<sup>*</sup></label>
+                                    <input type="password" name="password" required>
+                                </div> <!-- end form-group -->
+                                <div class="form-group submit">
+                                    <input type="submit" name="password" required value="Sign In to Uploader">
+                                </div> <!-- end form-group submit-->
+                                <p class="forgot_password">
+                                    Forgot password? Please <a class="click-here" href="javascript:void(0)" id="forgot_password">Click here</a>
+                                </p> <!-- end forgot_password -->
+                            </form> <!-- end form -->
+                        </div> <!-- end popup_content -->
+                    </div> <!-- end col-md-6 -->
+                    <div class="col-md-6 grey_band">
+                        <div class="popup_content">
+                            <ul>
+                                <li>
+                                    <a href="#" class="fb_btn">
+                                        <i class="fab fa-facebook-f"></i>
+                                        Sign in with Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="google_btn">
+                                        <i class="fab fa-google"></i>
+                                        Sign in with Google
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="twitter_btn">
+                                        <i class="fab fa-twitter"></i>
+                                        Sign in with Twitter
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> <!-- end popup_content -->
+                    </div> <!-- end grey_band col-md-6 -->
+                </div> <!-- end row -->
+            </div> <!-- end popup_box_form -->
+        </div> <!-- end popup_box_wrapper -->
+
+        <!-- signup form -->
+        <div class="popup_box_wrapper" id="signup">
+            <div class="close_btn">
+                <a href="javascript:void(0)"><i class="far fa-times-circle"></i></a>
+            </div>
+            <div class="popup_title">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Register Yourself</h4>
+                    </div> <!-- end col-md-6 -->
+                    <div class="col-md-6">
+                        <p>Already Registered ?
+                            <a href="javascript:void(0)" class="popup_title_button" id="login_form">Login</a>
+                        </p>
+                    </div> <!-- end col-md-6 -->
+                </div> <!-- end row -->
+            </div> <!-- end popup_title -->
+            <div class="popup_box_form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="popup_content">
+                            <form>
+                                <div class="form-group">
+                                    <label>First Name<sup>*</sup></label>
+                                    <input type="text" name="email" required>
+                                </div> <!-- end form-group -->
+
+                                <div class="form-group">
+                                    <label>Last Name<sup>*</sup></label>
+                                    <input type="text" name="email" required>
+                                </div> <!-- end form-group -->
+
+                                <div class="form-group">
+                                    <label>Username<sup>*</sup></label>
+                                    <input type="text" name="email" required>
+                                </div> <!-- end form-group -->
+
+                                <div class="form-group">
+                                    <label>Email Address<sup>*</sup></label>
+                                    <input type="email" name="password" required>
+                                </div> <!-- end form-group -->
+                                
+                                <div class="form-group">
+                                    <label>Password<sup>*</sup></label>
+                                    <input type="password" name="password" required>
+                                </div> <!-- end form-group -->
+
+                                <div class="form-group submit">
+                                    <input type="submit" name="password" required value="Sign Up">
+                                </div> <!-- end form-group submit-->
+                            </form> <!-- end form -->
+                        </div> <!-- end popup_content -->
+                    </div> <!-- end col-md-6 -->
+                    <div class="col-md-6 grey_band">
+                        <div class="popup_content">
+                            <ul>
+                                <li>
+                                    <a href="#" class="fb_btn">
+                                        <i class="fab fa-facebook-f"></i>
+                                        Sign in with Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="google_btn">
+                                        <i class="fab fa-google"></i>
+                                        Sign in with Google
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="twitter_btn">
+                                        <i class="fab fa-twitter"></i>
+                                        Sign in with Twitter
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> <!-- end popup_content -->
+                    </div> <!-- end grey_band col-md-6 -->
+                </div> <!-- end row -->
+            </div> <!-- end popup_box_form -->
+        </div> <!-- end popup_box_wrapper -->
+
+        <!-- Reset Password -->
+        <div class="popup_box_wrapper" id="reset_password">
+            <div class="close_btn">
+                <a href="javascript:void(0)"><i class="far fa-times-circle"></i></a>
+            </div>
+            <div class="popup_title">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Reset Password</h4>
+                    </div> <!-- end col-md-6 -->
+                    <div class="col-md-6">
+                        <p>Go Back to login page
+                            <a href="javascript:void(0)" class="popup_title_button" id="reset_password_form">Login</a>
+                        </p>
+                    </div> <!-- end col-md-6 -->
+                </div> <!-- end row -->
+            </div> <!-- end popup_title -->
+            <div class="popup_box_form">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="popup_content">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" name="email" required placeholder="Email Address">
+                                </div> <!-- end form-group -->
+                                <div class="form-group submit">
+                                    <input type="submit" name="password" required value="Recover Password">
+                                </div> <!-- end form-group submit-->
+                            </form> <!-- end form -->
+                        </div> <!-- end popup_content -->
+                    </div> <!-- end col-md-6 -->
+                </div> <!-- end row -->
+            </div> <!-- end popup_box_form -->
+        </div> <!-- end popup_box_wrapper -->
+    </div> <!-- end popup_box -->
+
+    <div class="user-dashboard-wrapper">
+        <div class="container">
+            <div class="user-dashboard">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="sidebar-dashboard">
+                            <div class="user-detail-wrapper">
+                                <img src="img/big-user-icon.png" alt="">
+                                <div class="user-detail">
+                                    <strong>Alan Bennett</strong>
+                                    <a href="#" class="btn">Follow</a>
+                                </div>
+                            </div>
+                            <div class="user-stats">
+                                <ul>
+                                    <li><i class="fas fa-eye"></i><span>5488</span>Media Views</li>
+                                    <li><i class="fas fa-thumbs-up"></i><span>6</span>Appreciations</li>
+                                    <li><i class="fas fa-users"></i><span>2</span>Followers</li>
+                                    <li><i class="fas fa-users"></i><span>0</span>Following</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="parentHorizontalTab">
+                            <ul class="resp-tabs-list hor_1">
+                                <li>Media Files</li>
+                                <li>Followers</li>
+                                <li>Following</li>
+                                <li>Media Likes</li>
+                            </ul>
+                            <div class="resp-tabs-container hor_1">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="grid_box">    
+                                                <div class="grid_img">
+                                                    <a href="#">
+                                                        <img src="img/img.jpg">
+                                                        <i class="far fa-file-alt"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="grid_content">
+                                                    <a href="#" class="btn">Nature</a>
+                                                    <a href="#">
+                                                        <h4>Is The Statue Of Liberty An Inspiration Of Muslim Art?</h4>
+                                                    </a>
+                                                    <div class="post_by">
+                                                        <a href="#">
+                                                            <img src="img/user.png">
+                                                            <p>Alan Bennett</p>
+                                                        </a>
+                                                    </div>
+                                                    <ul class="post-views">
+                                                        <li><a href="#"><i class="fas fa-thumbs-up"></i> 6 likes</a></li>
+                                                        <li><a href="#"><i class="fas fa-eye"></i>5990 views</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="grid_box">    
+                                                <div class="grid_img">
+                                                    <a href="#">
+                                                        <img src="img/img.jpg">
+                                                        <i class="far fa-file-alt"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="grid_content">
+                                                    <a href="#" class="btn">Nature</a>
+                                                    <a href="#">
+                                                        <h4>Is The Statue Of Liberty An Inspiration Of Muslim Art?</h4>
+                                                    </a>
+                                                    <div class="post_by">
+                                                        <a href="#">
+                                                            <img src="img/user.png">
+                                                            <p>Alan Bennett</p>
+                                                        </a>
+                                                    </div>
+                                                    <ul class="post-views">
+                                                        <li><a href="#"><i class="fas fa-thumbs-up"></i> 6 likes</a></li>
+                                                        <li><a href="#"><i class="fas fa-eye"></i>5990 views</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="ex-user">
+                                                <div class="ex-user-detail-wrapper">
+                                                    <img src="img/big-user-icon.png" alt="">
+                                                    <div class="user-detail">
+                                                        <a href="#"><strong>Kenzo Nijhuis</strong></a>
+                                                        <a href="#" class="btn">Follow</a>
+                                                    </div>
+                                                </div>
+                                                <div class="ex-user-stats">
+                                                    <ul>
+                                                        <li><span>0</span><a href="#">Followers</a></li>
+                                                        <li><span>0</span><a href="#">Posts</a></li>
+                                                        <li><span>1</span><a href="#">Following</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="ex-user">
+                                                <div class="ex-user-detail-wrapper">
+                                                    <img src="img/big-user-icon.png" alt="">
+                                                    <div class="user-detail">
+                                                        <a href="#"><strong>gionni stecchino</strong></a>
+                                                        <a href="#" class="btn">Follow</a>
+                                                    </div>
+                                                </div>
+                                                <div class="ex-user-stats">
+                                                    <ul>
+                                                        <li><span>0</span><a href="#">Followers</a></li>
+                                                        <li><span>0</span><a href="#">Posts</a></li>
+                                                        <li><span>1</span><a href="#">Following</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="blank-page-content">
+                                        <h2>CURRENTY NOT FOLLOWING ANYONE</h2>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="blank-page-content">
+                                        <h2>NO CONTENTS FOUND</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Follow Us</h3>
+                        <ul class="social_icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vimeo"></i></a></li>
+                            <li><a href="#"><i class="fab fa-soundcloud"></i></a></li>
+                            <li><a href="#"><i class="fab fa-flickr"></i></a></li>
+                        </ul> <!-- end social_icons -->
+                    </div> <!-- end col-md-6 -->
+                    <div class="col-md-6">
+                        <h3>Sign up for Latest Feeds</h3>
+                        <form>
+                            <div class="form-control subscribe">
+                                <input type="text" name="">
+                                <input type="submit" name="" value="Subscribe" class="btn">
+                            </div> <!-- end form-control subscribe -->
+                        </form> <!-- end form -->
+                    </div> <!-- end col-md-6 -->
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </div> <!-- end top-footer -->
+        <div class="middle-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>About Us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tortor massa, pulvinar non interdum at, placerat rutrum dolor. Sed interdum sem enim. Nulla at tincidunt leo mauris lectus libero.</p>
+                        <div class="contact_info">
+                            <p><i class="fas fa-phone"></i> <a href="tel:+1926589655">+1 92 658 965 5</a></p>
+                            <p><i class="fas fa-envelope"></i> <a href="mail:info@extracoding.com">info@extracoding.com</a></p>
+                        </div> <!-- end contact_info -->
+                    </div> <!-- end col-md-3 -->
+                    <div class="col-md-3">
+                        <h3>Recent Feeds</h3>
+                        <div class="feed_box">
+                            <a href="#">
+                                <img src="img/img.jpg">
+                                <p>Excellent Tips For Girls Look Confident On Your First Date</p>
+                            </a>
+                        </div><!-- end feed_box -->
+                        <div class="feed_box">
+                            <a href="#">
+                                <img src="img/img.jpg">
+                                <p>13 Things You Do If You Are A Wine Lover</p>
+                            </a>
+                        </div><!-- end feed_box -->
+                        <div class="feed_box">
+                            <a href="#">
+                                <img src="img/img.jpg">
+                                <p>I Leave Colourful Bundles Of Flowers For Strangers To</p>
+                            </a>
+                        </div><!-- end feed_box -->
+                    </div> <!-- end col-md-3 -->
+                    <div class="col-md-3">
+                        <h3>Recent Videos</h3>
+                        <div class="feed_box">
+                            <a href="#">
+                                <img src="img/img.jpg">
+                                <p>Artist Paints Of People Walking In The Rain</p>
+                            </a>
+                        </div><!-- end feed_box -->
+                        <div class="feed_box">
+                            <a href="#">
+                                <img src="img/img.jpg">
+                                <p>Is The Statue Of Liberty An Inspiration Of Muslim Art?</p>
+                            </a>
+                        </div><!-- end feed_box -->
+                        <div class="feed_box">
+                            <a href="#">
+                                <img src="img/img.jpg">
+                                <p>20 Cars With The Greatest-Sounding Factory Exhausts</p>
+                            </a>
+                        </div>  <!-- end feed_box -->
+                    </div> <!-- end col-md-3 -->
+                    <div class="col-md-3">
+                        <h3>Contact Us</h3>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Send Message">
+                            </div>
+                        </form>
+                    </div> <!-- end col-md-3 -->
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </div> <!-- end middle-footer -->
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Copyright 2020 All rights reserved-</p>
+                    </div> <!-- end col-md-6 -->
+                    <div class="col-md-6">
+                        
+                    </div> <!-- end col-md-6 -->
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </div>  <!-- end bottom-footer -->
+    </footer> <!-- end footer -->
+
+    <a href="#" class="back-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+
+</div><!-- end main_page -->
+
+
+
+
+</body>
+</html>
